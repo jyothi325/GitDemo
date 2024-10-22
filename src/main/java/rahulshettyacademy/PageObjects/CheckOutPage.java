@@ -2,8 +2,6 @@ package rahulshettyacademy.PageObjects;
 
 
 
-
-
 public class CheckOutPage {
 	
 	
