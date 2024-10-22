@@ -19,6 +19,7 @@ public void testcase2() {
 public void testcase3() {
 	
 	System.out.println("Test case 3");
+	System.out.println("Test case 2");
 	
 }
 
