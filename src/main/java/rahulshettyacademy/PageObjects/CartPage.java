@@ -1,48 +1,18 @@
 package rahulshettyacademy.PageObjects;
 
-import java.util.List;
 
+public class CartPage {
+	
+	public void testcase1() {
+	
+	System.out.println("Test case 1");
+	
+}
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
-import rahulshettyacademy.AbstractComponents.AbstractComponent;
-
-public class CartPage extends AbstractComponent{
+public void testcase2() {
 	
-	WebDriver driver;
+	System.out.println("Test case 2");
 	
-	public CartPage(WebDriver driver){		
-		super(driver);			
-		this.driver=driver;		
-		PageFactory.initElements(driver,this);
-	}
-	
-	
-	//PageFactory
-	
-	
-	@FindBy(css=".totalRow button")
-	WebElement checkOutEle;
-	
-	@FindBy(xpath="//*[@class='cartSection']/h3")
-	List<WebElement> productTitles;
-	
-	public boolean verifyProductDisply(String productname) {
-		
-		boolean match = productTitles.stream()
-				.anyMatch(cartproduct -> cartproduct.getText().equalsIgnoreCase(productname));
-		return match;
-		
-	}
-	
-	public CheckOutPage goToCheckOut()
-	{
-		checkOutEle.click();
-		return new CheckOutPage(driver);
-	}
-	
+}
 	
 }
